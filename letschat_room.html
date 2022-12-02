@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Let's Chat</title>
+        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"> </script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"> </script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    </head>
+    <body>
+        <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
+        <br>
+        <br>
+        <center>
+            <h3 id="welcome"></h3>
+            <br>
+            <label>#AddRoom</label>
+            <div class="input-container">
+                <i class="fa fa-plus icon"></i>
+                <input class="input-field form-control more" type="text" placeholder="#AddRoom" id="new_room" >
+              </div>
+              <button class="btn btn-success" onclick="add_room()"> "AddRoom" </button>
+              <br>
+              <br>
+              <br>
+              <h3>#TrendingRooms</h3>
+              <br>
+              <div id="output"></div>
+        </center>
+        <script src="kwitter_room.js"></script>
+    </body>
+</html>
